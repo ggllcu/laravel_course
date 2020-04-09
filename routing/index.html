@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=90051322">
+    <script src="../assets/script.js?t=93f1a66c"></script>
+    <title>Routing - Home</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <ul>
+          <li class="menu-item -level-0 -parent">
+            <ul class="submenu">
+              <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">Home</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title -active link-routing" href="../routing/index.html">Routing</a>
+                <ul class="headings heading-list">
+                  <li class="heading-item -depth-2"><a class="hlink link-basic-routing-and-views" href="#basic-routing-and-views">Basic Routing and Views</a>
+                  </li>
+                  <li class="heading-item -depth-2"><a class="hlink link-pass-request-data-to-views" href="#pass-request-data-to-views">Pass Request Data to Views</a>
+                  </li>
+                  <li class="heading-item -depth-2"><a class="hlink link-route-wildcards" href="#route-wildcards">Route Wildcards</a>
+                  </li>
+                  <li class="heading-item -depth-2"><a class="hlink link-routing-to-controllers" href="#routing-to-controllers">Routing to controllers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-forms" href="../forms/index.html">Forms</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="body page-routing">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="routing">Routing</h1>
+<h2 id="basic-routing-and-views">Basic Routing and Views</h2>
+<p>--- TO DO ---</p>
+<h2 id="pass-request-data-to-views">Pass Request Data to Views</h2>
+<p>We can take data from the route using the <code>request</code> helper function&quot;</p>
+<p><code>$value = request ($key);</code></p>
+<p>Then we can use this value and pass it to the view.</p>
+<p><code>return view(&apos;view&apos;, [&apos;key&apos; =&gt; $value]);</code></p>
+<p>In the view we can use <strong>Blade</strong> to access the data:</p>
+<p><code>{{ $ variable }}</code> -&gt; this syntax escape the value and then echo.</p>
+<h2 id="route-wildcards">Route Wildcards</h2>
+<p>Wildcards are used when the cate can be variable:</p>
+<p><code>Route::get(&apos;/posts/{slug}&apos;, function() );</code></p>
+<p>Laravel will create a variable with the same name you used in your wildcard, in this case <code>$slug</code>.</p>
+<p>It&apos;s a good idea check in the route if the content exists, otherwise return:</p>
+<p><code>abort (404, &apos;Nothing here&apos;);</code></p>
+<h2 id="routing-to-controllers">Routing to controllers</h2>
+<p>When we set up a route, instead of returning a view, we can return a controller:</p>
+<p><code>Route::get(&apos;/posts/{slug}&apos;, &apos;controller@method&apos;);</code></p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../index.html"><span class="title">Home</span></a></div>
+          <div class="right"><a href="../forms/index.html"><span class="label">Next: </span><span class="title">Forms</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

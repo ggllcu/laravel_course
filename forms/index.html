@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=90051322">
+    <script src="../assets/script.js?t=93f1a66c"></script>
+    <title>Forms - Home</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <ul>
+          <li class="menu-item -level-0 -parent">
+            <ul class="submenu">
+              <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">Home</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-routing" href="../routing/index.html">Routing</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title -active link-forms" href="../forms/index.html">Forms</a>
+                <ul class="headings heading-list">
+                  <li class="heading-item -depth-2"><a class="hlink link-the-seven-restful-controller-actions" href="#the-seven-restful-controller-actions">The seven restful controller actions</a>
+                  </li>
+                  <li class="heading-item -depth-2"><a class="hlink link-restful-routing" href="#restful-routing">Restful routing</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="body page-forms">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="forms">Forms</h1>
+<h2 id="the-seven-restful-controller-actions">The seven restful controller actions</h2>
+<p>Is a common convention to use this list of methods for a model:</p>
+<ul>
+<li><code>index()</code>: list of all items</li>
+<li><code>show()</code>: shows details of one item</li>
+<li><code>create()</code>: shows a view to create an item</li>
+<li><code>store()</code>: persists an item from request</li>
+<li><code>edit()</code>: shows a view to edit</li>
+<li><code>update()</code>: updates an existing item from a request</li>
+<li><code>destroy()</code>: deletes an item</li>
+</ul>
+<p>In Laravel, you can create a controller with all these rooted already set:</p>
+<p><code>php artisan make:controller ItemsController -r</code></p>
+<p>In addition, you can also generate a related model by adding the <code>-m</code> flag.
+In this case, the object model will be passed as argument to the controller methods.</p>
+<h2 id="restful-routing">Restful routing</h2>
+<p>There is a common convention about routing: <strong>try not to use verbs!</strong>
+Instead, you shoud use HTTP verbs.</p>
+<ul>
+<li><code>GET /items</code> -&gt; @index</li>
+<li><code>GET /items/create</code> -&gt; @create</li>
+<li><code>POST /items</code> -&gt; @store</li>
+<li><code>GET /items/:id</code> -&gt; @show</li>
+<li><code>GET /items/:id/edit</code> -&gt; @edit</li>
+<li><code>PUT /items/:id </code> -&gt; @update</li>
+<li><code>DELETE /items/:id</code> -&gt; @destroy</li>
+</ul>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../routing/index.html"><span class="title">Routing</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
