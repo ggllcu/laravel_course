@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ggllcu/laravel_course#readme",
   "devDependencies": {
-    "docpress": "0.8.1"
+    "docpress": "0.8.1",
+    "git-update-ghpages": "1.3.0"
   }
 }
