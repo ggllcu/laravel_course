@@ -1,2 +1,3 @@
-# laravel_course
+# Laravel Short Documentation
+
 Laracast Laravel Course 
