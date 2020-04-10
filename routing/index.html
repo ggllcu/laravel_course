@@ -16,6 +16,8 @@
             <ul class="submenu">
               <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">Home</a>
               </li>
+              <li class="menu-item -level-1"><a class="link title  link-introduction" href="../introduction/index.html">Introduction</a>
+              </li>
               <li class="menu-item -level-1"><a class="link title -active link-routing" href="../routing/index.html">Routing</a>
                 <ul class="headings heading-list">
                   <li class="heading-item -depth-2"><a class="hlink link-basic-routing-and-views" href="#basic-routing-and-views">Basic Routing and Views</a>
@@ -41,7 +43,10 @@
         </div>
         <div class="markdown-body"><h1 id="routing">Routing</h1>
 <h2 id="basic-routing-and-views">Basic Routing and Views</h2>
-<p>--- TO DO ---</p>
+<p>We can think views as the HTML response that we want to show as response to a user request.</p>
+<p>You can see all your views inside <code>resources &gt; views</code></p>
+<p>They looks very like to normal HTML pages, but the actually are blade file, a template engine for PHP.</p>
+<p><code>Blade Template =&gt; Blade Engine =&gt; Php files =&gt; HTML response</code></p>
 <h2 id="pass-request-data-to-views">Pass Request Data to Views</h2>
 <p>We can take data from the route using the <code>request</code> helper function&quot;</p>
 <p><code>$value = request ($key);</code></p>
@@ -61,7 +66,7 @@
 
         </div>
         <div class="footer-nav">
-          <div class="left"><a href="../index.html"><span class="title">Home</span></a></div>
+          <div class="left"><a href="../introduction/index.html"><span class="title">Introduction</span></a></div>
           <div class="right"><a href="../forms/index.html"><span class="label">Next: </span><span class="title">Forms</span></a></div>
         </div>
       </div>

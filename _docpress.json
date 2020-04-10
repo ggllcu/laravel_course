@@ -8,6 +8,46 @@
         "slug": "index"
       },
       {
+        "title": "Introduction",
+        "source": "docs/introduction/README.md",
+        "url": "introduction/index.html",
+        "slug": "introduction",
+        "headings": [
+          {
+            "title": "At a glance",
+            "depth": 2,
+            "id": "at-a-glance"
+          },
+          {
+            "title": "Requirements",
+            "depth": 2,
+            "id": "requirements"
+          },
+          {
+            "title": "Laravel Installer",
+            "depth": 2,
+            "id": "laravel-installer"
+          },
+          {
+            "title": "Laravel Valet",
+            "depth": 2,
+            "id": "laravel-valet",
+            "headings": [
+              {
+                "title": "Homestead",
+                "depth": 3,
+                "id": "homestead"
+              },
+              {
+                "title": "Valet",
+                "depth": 3,
+                "id": "valet"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "title": "Routing",
         "source": "docs/routing/README.md",
         "url": "routing/index.html",
@@ -62,6 +102,46 @@
       "pageTitle": "Home",
       "slug": "index"
     },
+    "introduction/index.html": {
+      "source": "docs/introduction/README.md",
+      "title": "Introduction - Home",
+      "pageTitle": "Introduction",
+      "slug": "introduction",
+      "headings": [
+        {
+          "title": "At a glance",
+          "depth": 2,
+          "id": "at-a-glance"
+        },
+        {
+          "title": "Requirements",
+          "depth": 2,
+          "id": "requirements"
+        },
+        {
+          "title": "Laravel Installer",
+          "depth": 2,
+          "id": "laravel-installer"
+        },
+        {
+          "title": "Laravel Valet",
+          "depth": 2,
+          "id": "laravel-valet",
+          "headings": [
+            {
+              "title": "Homestead",
+              "depth": 3,
+              "id": "homestead"
+            },
+            {
+              "title": "Valet",
+              "depth": 3,
+              "id": "valet"
+            }
+          ]
+        }
+      ]
+    },
     "routing/index.html": {
       "source": "docs/routing/README.md",
       "title": "Routing - Home",
@@ -111,7 +191,9 @@
   },
   "sources": {
     "README.md": "index.html",
+    "docs/introduction/README.md": "introduction/index.html",
     "docs/routing/README.md": "routing/index.html",
-    "docs/forms/README.md": "forms/index.html"
+    "docs/forms/README.md": "forms/index.html",
+    "docs/introduction/installation.png": "introduction/installation.png"
   }
 }
