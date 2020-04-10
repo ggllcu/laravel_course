@@ -2,7 +2,13 @@
 
 ## Basic Routing and Views
 
---- TO DO ---
+We can think views as the HTML response that we want to show as response to a user request.
+
+You can see all your views inside `resources > views`
+
+They looks very like to normal HTML pages, but the actually are blade file, a template engine for PHP.
+
+```Blade Template => Blade Engine => Php files => HTML response```
 
 ## Pass Request Data to Views 
 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=90051322">
+    <script src="../assets/script.js?t=93f1a66c"></script>
+    <title>Introduction - Home</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <ul>
+          <li class="menu-item -level-0 -parent">
+            <ul class="submenu">
+              <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">Home</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title -active link-introduction" href="../introduction/index.html">Introduction</a>
+                <ul class="headings heading-list">
+                  <li class="heading-item -depth-2"><a class="hlink link-at-a-glance" href="#at-a-glance">At a glance</a>
+                  </li>
+                  <li class="heading-item -depth-2"><a class="hlink link-requirements" href="#requirements">Requirements</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-routing" href="../routing/index.html">Routing</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-forms" href="../forms/index.html">Forms</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="body page-introduction">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="introduction">Introduction</h1>
+<h2 id="at-a-glance">At a glance</h2>
+<p>Basically, <strong>Laravel</strong> takes user request and return a response.
+<img src="installation.png" alt="Laravel Process"></p>
+<h2 id="requirements">Requirements</h2>
+<p>To run Laravel, you need to have:</p>
+<ul>
+<li>php</li>
+<li>database</li>
+<li>composer (dependency manager for PHP)</li>
+</ul>
+<p>To install composer, download it:</p>
+<pre><code>php -r &quot;copy(&apos;https://getcomposer.org/installer&apos;, &apos;composer-setup.php&apos;);&quot;
+php -r &quot;if (hash_file(&apos;sha384&apos;, &apos;composer-setup.php&apos;) === &apos;e0012edf3e80b6978849f5eff0d4b4e4c79ff1609dd1e613307e16318854d24ae64f26d17af3ef0bf7cfb710ca74755a&apos;) { echo &apos;Installer verified&apos;; } else { echo &apos;Installer corrupt&apos;; unlink(&apos;composer-setup.php&apos;); } echo PHP_EOL;&quot;
+php composer-setup.php
+php -r &quot;unlink(&apos;composer-setup.php&apos;);&quot;
+</code></pre>
+<p>and then install it globally:</p>
+<pre><code>mv composer.phar /usr/local/bin/composer
+</code></pre>
+<h2 id="laravel-installer">Laravel Installer</h2>
+<p>First, you need to install Laravel globally on your machine. The installation process depends from your operating system.</p>
+<p><code>composer global require laravel/installer</code></p>
+<p>Once you have Laravel installed, you can start a new project running:</p>
+<p><code>laravel new project</code></p>
+<p>The Laravel Installer will create a folder called <code>project</code> and put inside everything you need.</p>
+<p>You can see your projet working by running:</p>
+<p><code>php artisan serve</code></p>
+<p>Normally, you can see your website opening a brower and visiting:</p>
+<p><a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></p>
+<h2 id="laravel-valet">Laravel Valet</h2>
+<p>To running project in local, you have two options in Laravel:</p>
+<ul>
+<li>Homestead</li>
+<li>Valet</li>
+</ul>
+<h3 id="homestead">Homestead</h3>
+<p>Homestead in a complex tool that will use Vagrant for creating a virtual machine that can run Laravel.</p>
+<p>For most projects, this is a too complex and unnecessary complicated.</p>
+<h3 id="valet">Valet</h3>
+<p>Valet is avaiable only for Mac Os. Basically, Valet with map all the folders in a choosen folder to a <code>project_folder_name.test</code> url, always avaiable.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../index.html"><span class="title">Home</span></a></div>
+          <div class="right"><a href="../routing/index.html"><span class="label">Next: </span><span class="title">Routing</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
